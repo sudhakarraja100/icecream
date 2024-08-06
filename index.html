@@ -335,6 +335,73 @@
                 font-size: 1.2rem;
             }
         } */
+        /* Feedback section styling */
+#feedback {
+    padding: 2rem 0;
+    /* background-color: #fff; */
+    background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjc1NS10b29uLTE0XzEuanBn.jpg");
+    text-align: center;
+}
+
+#feedback h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.feed {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.feed form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f4f4f4;
+    width: 80%;
+    max-width: 500px;
+}
+
+.feed label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.feed input,
+.feed textarea {
+    margin: 5px 0 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    font-size: 1rem;
+}
+
+.feed textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.feed input[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feed input[type="submit"]:hover {
+    background-color: rgb(108, 248, 248);
+}
+
     </style>
     <script src="cart.js"></script>
     <script>
@@ -353,6 +420,7 @@
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <li><a href="#feedback">Feedback</a></li>
                     
                     <!-- <div class="cart"> -->
                         <button id="cart-button">Cart (<span id="cart-count">0</span>)</button>
@@ -460,11 +528,31 @@
         </div>
     </section>
 
+    <section id="feedback">
+        <div class="container">
+            <h2>Feedback Form</h2>
+            <div class="feed">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br>
+                    
+                    <label for="feedback-">Feedback:</label>
+                    <textarea id="feedback-" name="feedback" required></textarea><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </section>
+    
     
     <footer>
         <section id="contact"></section>
         <div class="container">
-            <p>Contact us: 9123-456-89 | info@sweettreats.com</p>
+            <p>Contact us: 0422-2524885 | info@sweettreats.com</p>
             <p>&copy; 2024 Sweet Treats Ice Cream. All rights reserved.</p>
             <div class="social-icons">
                 <a href="https://www.instagram.com/boomerang_icecream/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
